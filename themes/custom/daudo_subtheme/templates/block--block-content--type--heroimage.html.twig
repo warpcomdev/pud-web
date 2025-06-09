@@ -1,0 +1,27 @@
+{{ attach_library('daudo_subtheme/heroimage') }}
+
+{% if content.field_background_image[0]['#media'].field_media_image.entity.uri.value is defined %}
+  {% set image_url = file_url(content.field_background_image[0]['#media'].field_media_image.entity.uri.value) %}
+  <section class="heroimage-block" style="background-image: url('{{ image_url }}');">
+{% else %}
+  <section class="heroimage-block">
+{% endif %}
+  <div class="heroimage-overlay"></div>
+  <div class="heroimage-content">
+
+    {% if content.field_subtitle['#items'].0.value is defined %}
+      <div class="hero-subtitle">{{ content.field_subtitle['#items'].0.value }}</div>
+    {% endif %}
+
+    {% if content.field_title['#items'].0.value is defined %}
+      <h1 class="hero-title">{{ content.field_title['#items'].0.value }}</h1>
+    {% endif %}
+
+    {% if content.field_show_call_to_action and content.field_calltoaction_label and content.field_call_to_action_link %}
+      <a href="{{ content.field_call_to_action_link['#url'] }}" class="btn btn-cta">
+        {{ content.field_calltoaction_label['#items'].0.value }}
+      </a>
+    {% endif %}
+
+  </div>
+</section>

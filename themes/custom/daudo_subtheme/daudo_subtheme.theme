@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\Core\Block\BlockPluginInterface;
+
+function daudo_subtheme_preprocess_html(&$variables) {
+  $variables['#attached']['library'][] = 'daudo_subtheme/daudo_subtheme.skin.default';
+
+}
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function daudo_subtheme_preprocess_block(&$variables) {
+  if ($variables['base_plugin_id'] == 'block_content' && $variables['elements']['#bundle'] == 'heroimage') {
+    $variables['#attached']['library'][] = 'daudo_subtheme/hero-image-block';
+  }
+}

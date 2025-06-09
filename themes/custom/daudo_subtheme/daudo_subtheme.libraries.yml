@@ -1,0 +1,13 @@
+daudo_subtheme.skin.default:
+   version: VERSION
+   header: true
+   css:
+      theme:
+         css/style.css: {}
+   js:
+      js/main.js: {}
+
+heroimage:
+  css:
+    theme:
+      css/block--block-content--type--heroimage.css: {}

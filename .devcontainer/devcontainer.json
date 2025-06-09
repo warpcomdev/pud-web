@@ -1,0 +1,26 @@
+{
+    "name": "Portal Unificado Destinos",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "web",
+    "workspaceFolder": "/var/www/html",
+    "mounts": [
+        "source=${localWorkspaceFolder}/theme-install,target=/workspace/theme-install,type=bind"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            },
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug",
+                "mikestead.dotenv",
+                "eamodio.gitlens",
+                "ms-azuretools.vscode-docker",
+                "drupal.drupal"
+            ]
+        }
+    }
+}

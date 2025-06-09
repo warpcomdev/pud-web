@@ -1,0 +1,49 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+sites/*/files/
+sites/*/private/
+sites/*/translations/
+
+# Ignore Twig cache files
+sites/*/files/php/twig/
+
+# Ignore temporary files
+*.log
+*.sql
+*.sqlite
+*.swp
+*.swo
+*~
+
+# Ignore vendor directory
+/vendor/
+
+# Ignore node modules
+/node_modules/
+
+# Ignore compiled CSS and JS files
+*.css.map
+*.js.map
+
+# Ignore environment-specific files
+.env
+.env.*
+!.env.example
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
