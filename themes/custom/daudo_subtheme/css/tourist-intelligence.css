@@ -1,0 +1,110 @@
+.tourist-intelligence-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 1.5rem;
+  padding: 0 16px;
+}
+
+.tourist-intelligence-container.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.tourist-intelligence-image {
+  flex: 1 1 350px;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.tourist-intelligence-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  display: block;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.tourist-intelligence-content {
+  flex: 1 1 350px;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.tourist-intelligence-subtitle {
+  position: relative;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+  padding-left: 2rem;
+}
+
+.tourist-intelligence-subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+.tourist-intelligence-title {
+  font-family: var(--font-special);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--font-black);
+}
+
+.tourist-intelligence-description {
+  color: #909ead;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.tourist-intelligence-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tourist-intelligence-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.25rem;
+  font-family: var(--font-special);
+  font-weight: 600;
+  color: var(--font-black);
+}
+
+.reverse .tourist-intelligence-list li {
+  justify-content: flex-end;
+}
+
+.tourist-intelligence-bullet {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-right: 10px;
+  line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tourist-intelligence-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .tourist-intelligence-image,
+  .tourist-intelligence-content {
+    max-width: 100%;
+  }
+}

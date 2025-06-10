@@ -1,23 +1,26 @@
 /* Importación de fuentes */
 @font-face {
-  font-family: 'Nunito Sans';
-  src: url('../fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype-variations');
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf")
+    format("truetype-variations");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Nunito Sans';
-  src: url('../fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype-variations');
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.ttf")
+    format("truetype-variations");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('../fonts/Quicksand-VariableFont_wght.ttf') format('truetype-variations');
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf")
+    format("truetype-variations");
   font-weight: 100 1000;
   font-style: normal;
 }
@@ -25,18 +28,18 @@
 :root {
   --color-primary: #e6007a;
   --color-primary-dark: #b8005c;
-  --font-primary: 'Nunito Sans', sans-serif;
-  --font-special: 'Quicksand', sans-serif;
+  --font-primary: "Nunito Sans", sans-serif;
+  --font-special: "Quicksand", sans-serif;
   --font-size: 16px;
   --border-radius: 8px;
   --font-gray: #556372;
   --font-white: #fff;
   --font-black: #111517;
-  --footer-bg: #CFD3D8;
+  --footer-bg: #cfd3d8;
 }
 
- /* Rewrite styles */
- html {
+/* Rewrite styles */
+html {
   font-size: var(--font-size) !important;
 }
 
@@ -54,7 +57,7 @@ body {
     text-decoration: none;
     transition: color 0.3s ease;
   }
-  
+
   /* 
   * The rule dont override the active trail, so need to touch
   * the active trail rule to make it work in the file 
@@ -98,7 +101,6 @@ body {
   .navigation .gva_menu > li > a:after,
   .navigation .gva_menu > li > a:active {
     color: var(--font-black) !important;
-    
   }
 }
 
@@ -111,7 +113,7 @@ body {
   font-family: var(--font-primary) !important;
 }
 
-.gsc-heading .sub-title > span:after{
+.gsc-heading .sub-title > span:after {
   background-color: var(--color-primary) !important;
 }
 
@@ -121,12 +123,15 @@ body {
   font-size: 1.12rem !important;
 }
 
-
 #footer {
   background-color: var(--footer-bg) !important;
 }
 
 #footer > a {
+  display: none !important;
+}
+
+#footer .footer-inner {
   display: none !important;
 }
 
@@ -147,13 +152,13 @@ body {
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
   margin-top: 2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
 }
 
 .btn.btn-cta:hover {
   background: var(--color-primary-dark);
   color: var(--font-white);
-} 
+}
 
 .footer-links {
   display: flex;
@@ -199,7 +204,7 @@ body {
   top: 0.2em;
   bottom: 0.2em;
   width: 1px;
-  background-color: #909EAD;
+  background-color: #909ead;
 }
 
 .footer-links .links li > a {

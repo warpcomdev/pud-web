@@ -4,7 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   gap: 2rem;
-  grid-row: none; 
+  grid-row: none;
   justify-items: flex-start;
   width: fit-content;
 }
@@ -38,14 +38,14 @@
 }
 
 .sector-footer {
-  display: flex  ;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 0.75rem;
 }
 
 .sector-divider {
-  background-color: #909EAD;
+  background-color: #909ead;
   width: 20px;
   height: 2px;
   transition: width 0.3s;
