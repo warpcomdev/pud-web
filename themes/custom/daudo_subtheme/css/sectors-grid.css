@@ -1,0 +1,69 @@
+/* Estilos para el bloque Sectors Grid */
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  grid-row: none; 
+  justify-items: flex-start;
+  width: fit-content;
+}
+
+.sector-card {
+  background: var(--font-white);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(60, 60, 60, 0.05);
+  width: 300px;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 2rem 5rem 2rem 2rem;
+}
+
+.sector-card img {
+  width: 56px;
+  height: 56px;
+}
+
+.sector-title {
+  color: var(--font-black);
+  font-family: var(--font-special);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sector-footer {
+  display: flex  ;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.sector-divider {
+  background-color: #909EAD;
+  width: 20px;
+  height: 2px;
+  transition: width 0.3s;
+}
+
+.sector-description {
+  color: #111517;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Efecto hover */
+
+.sector-card:hover {
+  box-shadow: 0 4px 16px rgba(60, 60, 60, 0.15);
+}
+
+.sector-card:hover .sector-divider {
+  width: 56px;
+}
