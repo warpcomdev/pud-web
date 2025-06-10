@@ -13,5 +13,6 @@ heroimage:
       css/block--block-content--type--heroimage.css: {}
       css/service-grid.css: {}
       css/sectors-grid.css: {}
+      css/about.css: {}
       css/tourist-intelligence.css: {}
       css/contact.css: {}

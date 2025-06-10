@@ -109,6 +109,10 @@ body {
   color: var(--font-black) !important;
 }
 
+.gsc-heading.style-1 .title.text-theme {
+  color: var(--color-primary) !important;
+}
+
 .gsc-heading .sub-title {
   font-family: var(--font-primary) !important;
 }
@@ -138,6 +142,10 @@ body {
 /* Ocultar región de ayuda */
 .help.gav-help-region {
   display: none !important;
+}
+
+.color-primary {
+  color: var(--color-primary) !important;
 }
 
 .btn.btn-cta {
