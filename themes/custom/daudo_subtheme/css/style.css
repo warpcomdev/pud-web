@@ -44,6 +44,64 @@ body {
   font-family: var(--font-primary) !important;
 }
 
+@media (min-width: 992px) {
+  .navigation .gva_menu > li > a {
+    font-family: var(--font-special) !important;
+    font-weight: 700;
+    color: var(--font-black) !important;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* 
+  * The rule dont override the active trail, so need to touch
+  * the active trail rule to make it work in the file 
+  * themes/custom/gavias_daudo/css/skins/pink/template.css L8059
+  */
+  .navigation .gva_menu > li.menu-item--active-trail > a {
+    color: var(--font-black) !important;
+  }
+
+  .navigation .gva_menu > li:not(.menu-item--active-trail) > a::after {
+    content: "";
+    position: absolute;
+    left: 20px; /* padding-left */
+    bottom: 2em;
+    width: calc(100% - 40px); /* 20px padding-x */
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .navigation .gva_menu > li:not(.menu-item--active-trail) > a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .navigation .gva_menu > li.menu-item--active-trail > a::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 2em;
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: none;
+  }
+
+  .navigation .gva_menu > li > a:hover,
+  .navigation .gva_menu > li > a:after,
+  .navigation .gva_menu > li > a:active {
+    color: var(--font-black) !important;
+    
+  }
+}
+
 .gsc-heading.style-1 .title {
   font-family: var(--font-special) !important;
   color: var(--font-black) !important;
