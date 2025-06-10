@@ -17,7 +17,7 @@
       <h1 class="hero-title">{{ content.field_title['#items'].0.value }}</h1>
     {% endif %}
 
-    {% if content.field_show_call_to_action and content.field_calltoaction_label and content.field_call_to_action_link %}
+    {% if content.field_show_call_to_action['#items'].0.value and content.field_calltoaction_label and content.field_call_to_action_link %}
       <a href="{{ content.field_call_to_action_link['#url'] }}" class="btn btn-cta">
         {{ content.field_calltoaction_label['#items'].0.value }}
       </a>

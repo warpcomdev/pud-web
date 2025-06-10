@@ -2,7 +2,6 @@
 .heroimage-block {
   position: relative;
   width: 100%;
-  min-height: 600px;
   background-size: cover;
   background-position: center;
   display: flex;
