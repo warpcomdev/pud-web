@@ -127,6 +127,15 @@ body {
   font-size: 1.12rem !important;
 }
 
+.webform-submission-form .form-actions {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.webform-submission-form .form-actions .btn {
+  margin-right: 0 !important;
+}
+
 #footer {
   background-color: var(--footer-bg) !important;
 }
@@ -146,6 +155,19 @@ body {
 
 .color-primary {
   color: var(--color-primary) !important;
+}
+
+.border-radius {
+  border-radius: var(--border-radius) !important;
+}
+
+.contact-btn {
+  border-radius: var(--border-radius) !important;
+  background: var(--color-primary) !important;
+}
+
+.contact-btn:hover {
+  background: var(--color-primary-dark) !important;
 }
 
 .btn.btn-cta {
