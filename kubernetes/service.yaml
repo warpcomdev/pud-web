@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pud-web-service
+spec:
+  selector:
+    app: pud-web
+  ports:
+      # El servicio va a exponer el puerto 80
+    - port: 80
+      # Y va a enviar el tráfico al puerto del contenedor
+      # etiquetado con el nombre "http", que es el 8080.
+      targetPort: http
+  type: ClusterIP

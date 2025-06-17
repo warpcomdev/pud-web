@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pud-web
+  labels:
+    app: pud-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pud-web
+  template:
+    metadata:
+      labels:
+        app: pud-web
+    spec:
+      containers:
+      - name: pud-web
+        image: ghcr.io/warpcomdev/pud-web:latest
+        # Openshift por defecto no te va a dejar ejecutar procesos privilegiados,
+        # por lo que no vas a poder poner a apache a escuchar en el puerto 80.
+        # Lo tñipico en este caso es poner apache a escuchar en el puerto 8080,
+        # y luego hacer la redirección 80 -> 8080 en el Service.
+        ports:
+        - name: http
+          containerPort: 8080
+        # Las variables de entorno las va a montar del Secret
+        envFrom:
+        - secretRef:
+            name: pud-web-secret
+        volumeMounts:
+        # Vamos a usar un solo volumen kubernetes con dos subdirectorios:
+        # - El subdirectorio "html" del volumen lo vamos a montar en /var/www/html
+        - name: pud-web-storage
+          mountPath: /var/www/html
+          subPath: html
+        # - El subdirectorio "theme-install", en /workspace/theme-install
+        - name: pud-web-storage
+          mountPath: /workspace/theme-install
+          subPath: theme-install
+        workingDir: /var/www/html
+      volumes:
+      - name: pud-web-storage
+        persistentVolumeClaim:
+          claimName: pud-web-pvc
