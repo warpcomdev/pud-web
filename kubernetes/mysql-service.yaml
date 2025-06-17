@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: db
+  labels:
+    app: pud-mysql
+spec:
+  ports:
+  - port: 3306
+    targetPort: mysql
+    protocol: TCP
+    name: mysql
+  selector:
+    app: pud-mysql 

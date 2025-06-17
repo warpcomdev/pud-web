@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pud-mysql
+  labels:
+    app: pud-mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pud-mysql
+  template:
+    metadata:
+      labels:
+        app: pud-mysql
+    spec:
+      containers:
+      - name: pud-mysql
+        image: mysql:8.0
+        ports:
+        - name: mysql
+          containerPort: 3306
+        envFrom:
+        - secretRef:
+            name: pud-web-secret
+        volumeMounts:
+        - name: mysql-data
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-data
+        persistentVolumeClaim:
+          claimName: pud-mysql-pvc 
