@@ -4,7 +4,8 @@ metadata:
   name: pud-web-ingress
 spec:
   rules:
-    - http:
+    - host: pid.segittur.es
+      http:
         paths:
           - path: /
             pathType: Prefix

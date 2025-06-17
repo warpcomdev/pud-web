@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: pud-web
-        image: ghcr.io/warpcomdev/pud-web:latest
+        image: docker.io/warpcomdev/pud-web:latest
+        imagePullPolicy: Always
         # Openshift por defecto no te va a dejar ejecutar procesos privilegiados,
         # por lo que no vas a poder poner a apache a escuchar en el puerto 80.
         # Lo tñipico en este caso es poner apache a escuchar en el puerto 8080,

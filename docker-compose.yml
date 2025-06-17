@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: pud_web
     ports:
-      - "9090:80"
+      - "9090:8080"
     volumes:
       - .:/var/www/html
       - ./theme-install:/workspace/theme-install
