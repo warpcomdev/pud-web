@@ -1,0 +1,29 @@
+uuid: 7e8193f1-eb21-4900-9461-a62ee855b06d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a797b17b-ab2a-4881-ba24-171bee4f4fe8'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - gavias_daudo
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_daudo_contactboxfooter
+theme: gavias_daudo
+region: footer_four
+weight: 0
+provider: null
+plugin: 'block_content:a797b17b-ab2a-4881-ba24-171bee4f4fe8'
+settings:
+  id: 'block_content:a797b17b-ab2a-4881-ba24-171bee4f4fe8'
+  label: 'Contact Box Footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

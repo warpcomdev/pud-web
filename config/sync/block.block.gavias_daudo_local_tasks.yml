@@ -1,0 +1,22 @@
+uuid: 14c788fe-72c0-4065-b79d-8f6ccedd5da7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gavias_daudo
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: gavias_daudo_local_tasks
+theme: gavias_daudo
+region: help
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

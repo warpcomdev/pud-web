@@ -1,0 +1,4 @@
+services:
+  # Default service definitions.
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory 

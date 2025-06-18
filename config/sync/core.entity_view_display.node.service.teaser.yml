@@ -1,0 +1,57 @@
+uuid: f09075ba-5d17-4a23-b896-ee792967e882
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service.body
+    - field.field.node.service.comment
+    - field.field.node.service.field_service_icon
+    - field.field.node.service.field_service_images
+    - image.style.medium
+    - node.type.service
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: JIx041ciF0BwV7OZre2-Q7otRRNgeVHnLwyUyA99Duo
+id: node.service.teaser
+targetEntityType: node
+bundle: service
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_service_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_service_images:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  comment: true
+  langcode: true
+  links: true

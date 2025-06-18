@@ -1,0 +1,68 @@
+uuid: 919906c2-49d5-4984-bea1-91e12bc06233
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.service.body
+    - field.field.node.service.comment
+    - field.field.node.service.field_service_icon
+    - field.field.node.service.field_service_images
+    - node.type.service
+  module:
+    - comment
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: 9aCFVuDMlDJDCiyAPh2Hc0AVL8aoC9UYs9SNKgrBA5Q
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_service_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_service_images:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true

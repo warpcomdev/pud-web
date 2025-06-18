@@ -1,0 +1,29 @@
+uuid: 5e685579-ccdf-4beb-be48-2da86743805b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:heroimage:324f97e2-e4fa-4a54-82a6-36b7edaab27a'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: daudo_subtheme_heroimageservicios
+theme: daudo_subtheme
+region: other
+weight: -3
+provider: null
+plugin: 'block_content:324f97e2-e4fa-4a54-82a6-36b7edaab27a'
+settings:
+  id: 'block_content:324f97e2-e4fa-4a54-82a6-36b7edaab27a'
+  label: 'HeroImage - Servicios'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 4c79d419-a509-4e2f-8743-48c65247fbad
+langcode: en
+status: true
+dependencies:
+  module:
+    - gaviasthemer
+    - search
+  theme:
+    - gavias_daudo
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_daudo_searchform
+theme: gavias_daudo
+region: search
+weight: -13
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

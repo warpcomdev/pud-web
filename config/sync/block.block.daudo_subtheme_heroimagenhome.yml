@@ -1,0 +1,29 @@
+uuid: fed7ff41-05c3-4298-b07b-a37f813b404c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:heroimage:ecb4cf1a-c40f-4c4e-be73-3d325c9addb5'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: daudo_subtheme_heroimagenhome
+theme: daudo_subtheme
+region: other
+weight: -5
+provider: null
+plugin: 'block_content:ecb4cf1a-c40f-4c4e-be73-3d325c9addb5'
+settings:
+  id: 'block_content:ecb4cf1a-c40f-4c4e-be73-3d325c9addb5'
+  label: 'HeroImagen - Home'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

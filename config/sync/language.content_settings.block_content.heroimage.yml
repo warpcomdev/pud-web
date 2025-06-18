@@ -1,0 +1,11 @@
+uuid: 7727b314-1732-41f9-8386-a1dae7ac1bda
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.heroimage
+id: block_content.heroimage
+target_entity_type_id: block_content
+target_bundle: heroimage
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: d66e681b-44cb-4a3c-85c7-b40392219d11
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gavias_daudo
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: gavias_daudo_local_actions
+theme: gavias_daudo
+region: help
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

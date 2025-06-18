@@ -1,0 +1,29 @@
+uuid: 8dc25267-ea66-4ba6-9930-5f0d75f8a96d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:heroimage:e5f05c6a-947f-44b5-9a50-e5b5827596e4'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: daudo_subtheme_heroimagecontacto
+theme: daudo_subtheme
+region: other
+weight: 0
+provider: null
+plugin: 'block_content:e5f05c6a-947f-44b5-9a50-e5b5827596e4'
+settings:
+  id: 'block_content:e5f05c6a-947f-44b5-9a50-e5b5827596e4'
+  label: 'HeroImage - Contacto'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

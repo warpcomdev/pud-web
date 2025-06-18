@@ -1,0 +1,22 @@
+uuid: af961194-6af4-4796-b40e-cac7e5e61d83
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gavias_daudo
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: gavias_daudo_breadcrumbs
+theme: gavias_daudo
+region: breadcrumbs
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

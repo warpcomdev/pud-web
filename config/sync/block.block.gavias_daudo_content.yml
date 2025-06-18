@@ -1,0 +1,22 @@
+uuid: 394da116-cdbe-4cdc-859a-7d76ad8adbe0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gavias_daudo
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: gavias_daudo_content
+theme: gavias_daudo
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

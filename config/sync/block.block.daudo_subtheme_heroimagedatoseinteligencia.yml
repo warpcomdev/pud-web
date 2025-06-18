@@ -1,0 +1,29 @@
+uuid: 2479fcc8-df4c-47ae-a6b1-bf993048aefb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:heroimage:e840f087-e99f-4e67-8ffa-c3f332c24a80'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: daudo_subtheme_heroimagedatoseinteligencia
+theme: daudo_subtheme
+region: other
+weight: -2
+provider: null
+plugin: 'block_content:e840f087-e99f-4e67-8ffa-c3f332c24a80'
+settings:
+  id: 'block_content:e840f087-e99f-4e67-8ffa-c3f332c24a80'
+  label: 'HeroImage - Datos e Inteligencia'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

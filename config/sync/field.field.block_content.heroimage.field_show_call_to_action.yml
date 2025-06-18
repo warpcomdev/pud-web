@@ -1,0 +1,23 @@
+uuid: 69f98795-9bbe-40b3-b851-4d5d87f0dd3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.heroimage
+    - field.storage.block_content.field_show_call_to_action
+id: block_content.heroimage.field_show_call_to_action
+field_name: field_show_call_to_action
+entity_type: block_content
+bundle: heroimage
+label: 'Show Call To Action'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

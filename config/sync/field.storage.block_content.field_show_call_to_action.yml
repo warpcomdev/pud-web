@@ -1,0 +1,18 @@
+uuid: 86a78abc-e8d5-4c0a-9aae-1071a974eb0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_show_call_to_action
+field_name: field_show_call_to_action
+entity_type: block_content
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

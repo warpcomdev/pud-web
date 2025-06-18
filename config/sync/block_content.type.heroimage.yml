@@ -1,0 +1,8 @@
+uuid: 0bb134da-a885-4b09-b019-252cca20cc13
+langcode: en
+status: true
+dependencies: {  }
+id: heroimage
+label: HeroImage
+revision: false
+description: 'Shows a Image with title and description'

@@ -1,0 +1,24 @@
+uuid: 59875bb0-7abd-4f07-a8f9-afaa9219d9f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - gavias_daudo
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_daudo_messages
+theme: gavias_daudo
+region: help
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

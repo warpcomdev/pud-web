@@ -1,0 +1,29 @@
+uuid: 026bc8ec-d108-42e8-9232-5c9a1b531efd
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - gaviasthemer
+    - webform
+  theme:
+    - gavias_daudo
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_daudo_webform
+theme: gavias_daudo
+region: other
+weight: -10
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Webform - Contact'
+  label_display: '0'
+  provider: webform
+  webform_id: contact
+  default_data: ''
+  redirect: false
+visibility: {  }

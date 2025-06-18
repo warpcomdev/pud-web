@@ -1,0 +1,29 @@
+uuid: 7378be1f-aba4-44a3-bc1d-d5dfb64a0c4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: daudo_subtheme_mainnavigation
+theme: daudo_subtheme
+region: main_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 6f335f48-f105-4300-8a21-fe7c9d252c29
+langcode: en
+status: true
+dependencies:
+  module:
+    - gaviasthemer
+    - system
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: daudo_subtheme_sitebranding
+theme: daudo_subtheme
+region: branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

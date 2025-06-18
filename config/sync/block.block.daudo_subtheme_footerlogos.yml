@@ -1,0 +1,29 @@
+uuid: a5228f6f-1612-43d3-92da-00e8f783f485
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f68ff84d-6af0-4c49-8b85-ae338addc541'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: daudo_subtheme_footerlogos
+theme: daudo_subtheme
+region: copyright
+weight: -5
+provider: null
+plugin: 'block_content:f68ff84d-6af0-4c49-8b85-ae338addc541'
+settings:
+  id: 'block_content:f68ff84d-6af0-4c49-8b85-ae338addc541'
+  label: 'Footer Logos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

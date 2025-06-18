@@ -1,0 +1,29 @@
+uuid: d5826bfd-7c8e-4a5c-ad00-c9254e6ce1be
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:heroimage:b3aead1d-7ba9-45b3-b383-efa1766f6f1c'
+  module:
+    - block_content
+    - gaviasthemer
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: daudo_subtheme_heroimagequeeslapid
+theme: daudo_subtheme
+region: other
+weight: -4
+provider: null
+plugin: 'block_content:b3aead1d-7ba9-45b3-b383-efa1766f6f1c'
+settings:
+  id: 'block_content:b3aead1d-7ba9-45b3-b383-efa1766f6f1c'
+  label: 'HeroImage - Que es la PID'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

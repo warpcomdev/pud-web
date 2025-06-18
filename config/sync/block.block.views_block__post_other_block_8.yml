@@ -1,0 +1,28 @@
+uuid: 8f622952-5852-4684-bf9c-d854d716be4c
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.post_other
+  module:
+    - gaviasthemer
+    - views
+  theme:
+    - daudo_subtheme
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: views_block__post_other_block_8
+theme: daudo_subtheme
+region: quick_side
+weight: -15
+provider: null
+plugin: 'views_block:post_other-block_8'
+settings:
+  id: 'views_block:post_other-block_8'
+  label: 'Featured Posts'
+  label_display: visible
+  provider: views
+  views_label: 'Featured Posts'
+  items_per_page: none
+visibility: {  }

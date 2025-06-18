@@ -1,0 +1,22 @@
+uuid: 37355ef5-58cd-4c55-89b4-659407c35d73
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - daudo_subtheme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: daudo_subtheme_content
+theme: daudo_subtheme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

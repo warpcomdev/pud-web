@@ -1,0 +1,24 @@
+uuid: 1317a5bb-313d-4301-9a84-f99fb206025c
+langcode: en
+status: true
+dependencies:
+  module:
+    - gaviasthemer
+    - mailchimp_signup
+  theme:
+    - gavias_daudo
+third_party_settings:
+  gaviasthemer:
+    classes: ''
+id: gavias_daudo_mailchimpsubscriptionformsubscribenewsletter_2
+theme: gavias_daudo
+region: before_footer
+weight: 0
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:subscribe_newsletter'
+settings:
+  id: 'mailchimp_signup_subscribe_block:subscribe_newsletter'
+  label: 'Sign Up to Get Latest Updates'
+  label_display: visible
+  provider: mailchimp_signup
+visibility: {  }

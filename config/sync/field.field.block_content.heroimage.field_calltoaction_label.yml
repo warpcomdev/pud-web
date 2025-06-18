@@ -1,0 +1,19 @@
+uuid: f0fb7182-6421-4b8a-be8e-eb4d59e51a61
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.heroimage
+    - field.storage.block_content.field_calltoaction_label
+id: block_content.heroimage.field_calltoaction_label
+field_name: field_calltoaction_label
+entity_type: block_content
+bundle: heroimage
+label: 'Call To Action Label '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
