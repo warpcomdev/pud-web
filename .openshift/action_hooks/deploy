@@ -1,0 +1,33 @@
+#!/bin/bash
+# Script que se ejecuta después del deploy en OpenShift
+
+echo "Configurando Drupal después del deploy..."
+
+# Configurar variables de entorno si no están definidas
+export DATABASE_HOST=${DATABASE_HOST:-db}
+export DATABASE_PORT=${DATABASE_PORT:-3306}
+export DATABASE_NAME=${DATABASE_NAME:-drupal}
+export DATABASE_USER=${DATABASE_USER:-drupal}
+export DATABASE_PASSWORD=${DATABASE_PASSWORD:-drupal}
+
+# Configurar directorios
+mkdir -p sites/default/files
+chmod -R 777 sites/default/files
+
+# Verificar si Drupal está instalado
+if [ ! -f sites/default/settings.php ]; then
+    echo "Instalando Drupal..."
+    cp sites/default/default.settings.php sites/default/settings.php
+    chmod 644 sites/default/settings.php
+fi
+
+# Importar configuración si existe
+if [ -d "config/sync" ] && [ "$(ls -A config/sync)" ]; then
+    echo "Importando configuración..."
+    vendor/bin/drush config:import -y
+fi
+
+# Limpiar caché
+vendor/bin/drush cr
+
+echo "Drupal configurado correctamente" 

@@ -1,0 +1,14 @@
+#!/bin/bash
+# Script que se ejecuta antes del build en OpenShift
+
+echo "Preparando build para OpenShift..."
+
+# Crear directorios necesarios
+mkdir -p sites/default/files
+mkdir -p config/sync
+
+# Configurar permisos
+chmod -R 755 sites/default/files
+chmod -R 755 config/sync
+
+echo "Build preparado" 

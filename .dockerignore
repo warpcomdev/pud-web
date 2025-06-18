@@ -1,0 +1,45 @@
+# Drupal core files
+core/
+modules/contrib/
+themes/contrib/
+vendor/
+
+# Configuration files
+sites/*/settings.php
+sites/*/services.yml
+
+# Files directory
+sites/*/files/
+
+# Development container files
+.devcontainer/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Version control
+.git/
+.gitignore
+
+# Documentation
+README.md
+CHANGELOG.txt
+LICENSE.txt
+
+# Development files
+node_modules/
+.sass-cache/
+*.css.map
+*.js.map
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db 
