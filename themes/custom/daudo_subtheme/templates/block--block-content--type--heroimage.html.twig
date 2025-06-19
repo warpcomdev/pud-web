@@ -1,7 +1,7 @@
 {{ attach_library('daudo_subtheme/heroimage') }}
 
-{% if content.field_background_image[0]['#media'].field_media_image.entity.uri.value is defined %}
-  {% set image_url = file_url(content.field_background_image[0]['#media'].field_media_image.entity.uri.value) %}
+{% if content.field_image['#items'].0.value is defined %}
+  {% set image_url = file_url(content.field_image['#items'].0.value) %}
   <section class="heroimage-block" style="background-image: url('{{ image_url }}');">
 {% else %}
   <section class="heroimage-block">

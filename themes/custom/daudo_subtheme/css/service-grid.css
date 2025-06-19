@@ -22,9 +22,8 @@
   align-items: start;
   justify-content: space-between;
   transition: border 0.2s, box-shadow 0.2s, background 0.3s, color 0.3s;
-  cursor: pointer;
   overflow: hidden;
-  padding: 45px 38px;
+  padding: 45px 40px;
 }
 
 .service-card img {
@@ -36,30 +35,7 @@
   color: #222;
   transition: color 0.3s;
   font-family: var(--font-special);
-  font-size: 1.375rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: normal;
-}
-
-.service-title span {
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-/* Efecto hover */
-.service-card:hover {
-  background: #97a6b8;
-  border: 2px solid #97a6b8;
-}
-
-.service-card:hover img {
-  opacity: 0;
-}
-
-.service-card:hover .service-title {
-  color: var(--font-white);
-}
-
-.service-card:hover .service-title span {
-  opacity: 1;
 }
