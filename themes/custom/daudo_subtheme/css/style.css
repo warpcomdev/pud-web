@@ -161,6 +161,29 @@ body {
   border-radius: var(--border-radius) !important;
 }
 
+.schedule-grid .gsc-column,
+.schedule-grid .column-inner,
+.schedule-grid .column-content-inner,
+.schedule-grid .gsc-progress-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.schedule-grid .gsc-progress-box {
+  height: 100%;
+}
+
+.schedule .title {
+  min-height: 80px;
+  margin-bottom: 25px !important;
+}
+
+.schedule .desc p {
+  margin-bottom: 0;
+}
+
 .contact-btn {
   border-radius: var(--border-radius) !important;
   background: var(--color-primary) !important;

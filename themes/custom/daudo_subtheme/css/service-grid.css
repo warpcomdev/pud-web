@@ -15,27 +15,26 @@
   border: 2px solid transparent;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 8px rgba(60, 60, 60, 0.05);
-  width: 225px;
+  width: 235px;
   height: 275px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  transition: border 0.2s, box-shadow 0.2s, background 0.3s, color 0.3s;
   overflow: hidden;
   padding: 45px 40px;
 }
 
-.service-card img {
-  width: 80px;
-  height: 80px;
+.service-card i {
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 .service-title {
   color: #222;
   transition: color 0.3s;
   font-family: var(--font-special);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: normal;
 }
