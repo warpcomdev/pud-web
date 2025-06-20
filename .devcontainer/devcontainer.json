@@ -19,7 +19,8 @@
                 "mikestead.dotenv",
                 "eamodio.gitlens",
                 "ms-azuretools.vscode-docker",
-                "drupal.drupal"
+                "drupal.drupal",
+                "esbenp.prettier-vscode"
             ]
         }
     }
