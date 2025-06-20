@@ -7,7 +7,7 @@ spec:
     - host: pid.segittur.es
       http:
         paths:
-          - path: /
+          - path: /pau
             pathType: Prefix
             backend:
               service:
