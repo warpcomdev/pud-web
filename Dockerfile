@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     zip \
     vim \
     mariadb-client \
-    mysql-client \
+    default-mysql-client \
     && docker-php-ext-install pdo pdo_mysql mysqli zip gd mbstring xml
 
 # Activa mod_rewrite para URLs amigables
