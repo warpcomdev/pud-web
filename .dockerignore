@@ -5,7 +5,7 @@ themes/contrib/
 vendor/
 
 # Configuration files
-sites/*/settings.php
+sites/*/settings.local.php
 sites/*/services.yml
 
 # Files directory

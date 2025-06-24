@@ -46,3 +46,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 # Instala Drush globalmente
 RUN composer global require drush/drush && ln -s /root/.composer/vendor/bin/drush /usr/local/bin/drush
+
+RUN echo 'Alias /pau /var/www/html' > /etc/apache2/conf-available/drupal-alias.conf && \
+    echo '<Directory /var/www/html>' >> /etc/apache2/conf-available/drupal-alias.conf && \
+    echo '    AllowOverride All' >> /etc/apache2/conf-available/drupal-alias.conf && \
+    echo '    Require all granted' >> /etc/apache2/conf-available/drupal-alias.conf && \
+    echo '</Directory>' >> /etc/apache2/conf-available/drupal-alias.conf && \
+    a2enconf drupal-alias
