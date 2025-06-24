@@ -186,3 +186,5 @@ AddType image/webp .webp
 
 
 RewriteBase /pau
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /pau/ [R=301,L]
