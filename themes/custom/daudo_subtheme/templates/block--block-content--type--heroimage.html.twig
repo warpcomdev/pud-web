@@ -2,7 +2,7 @@
 
 {% if content.field_image['#items'].0.value is defined %}
   {% set image_url = file_url(content.field_image['#items'].0.value) %}
-  <section class="heroimage-block" style="background-image: url('{{ image_url }}');">
+  <section class="heroimage-block" style="background-image: url('{{ base_path ~ directory ~ image_url }}');">
 {% else %}
   <section class="heroimage-block">
 {% endif %}
